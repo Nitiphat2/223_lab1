@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,t,i=0,k;
+    int n,m,t,i=0,k=0;
     scanf("%d%d%d",&n,&m,&t);
     fflush(stdin);
     char l;
     scanf("%c",&l);
-    if(l == "L")
+    if(l == 'L')
     {
         while(t > 0)
         {
@@ -23,23 +23,24 @@ int main()
             }
         }
     }
-    else if(l > "R")
+    else if(l == 'R')
     {
-        while(t != 0)
+        while(t > 0)
         {
             i++;
             if(i%2==0)
             {
                 t=t-n;
-                k=0;
+                k=1;
             }
             else
             {
                 t=t-m;
-                k=1;
+                k = 0;
             }
         }
     }
+    printf("%d",k);
     if(k == 0)
     {
         printf("L");
