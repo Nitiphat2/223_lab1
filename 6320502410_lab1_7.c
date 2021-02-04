@@ -11,12 +11,26 @@ int main()
     {
         if(0 <= b && b <= 12)
         {
-            printf("%d.%d am",b,d);
+            if(d >= 0 && d < 10)
+            {
+                 printf("%d.0%d pm",b,d);
+            }
+            else
+            {
+                printf("%d.%d pm",b,d);
+            }
         }
-        else if(12 < b && b <= 24)
+        else if(12 <= b && b <= 24)
         {
             b = b - 12;
-            printf("%d.%d pm",b,d);
+            if(d >= 0 && d < 10)
+            {
+                 printf("%d.0%d pm",b,d);
+            }
+            else
+            {
+                printf("%d.%d pm",b,d);
+            }
         }
     }
 
