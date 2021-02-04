@@ -8,7 +8,7 @@ int main()
     scanf("%c",&l);
     if(l == "L")
     {
-        while(t != 0)
+        while(t > 0)
         {
             i++;
             if(i%2==1)
@@ -23,7 +23,7 @@ int main()
             }
         }
     }
-    else if(l == "R")
+    else if(l > "R")
     {
         while(t != 0)
         {
