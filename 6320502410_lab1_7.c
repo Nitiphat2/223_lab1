@@ -1,14 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    float time;
+    float time,a;
     scanf("%f",&time);
-    if(0 < time && time < 12)
+    printf("%f",time);
+    int b,d,c;
+    if(time < 24)
     {
-        printf("%.2f am",time);
+        a = int(time) % 12;
+        b = a * 100;
+        c = floor(a);
+        d=b-c;
+        if(0 < time && time < 12)
+        {
+            printf("%.2f am",time);
+        }
+        else if(12 < time && time < 24)
+        {
+            printf("%d.%d pm",c,d);
+        }
     }
-    else if(12 < time && time < 24)
-    {
-        printf("%.2f pm",time);
-    }
+
 }
