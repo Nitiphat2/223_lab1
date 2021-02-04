@@ -11,11 +11,11 @@ int main()
     k=num[0];
     for(i=0;i<n;i++)
     {
-        if(k<num[i]);
+        if(k<num[i])
         {
             k=num[i];
             j=i;
         }
     }
-    printf("%d %d",j,k);
+    printf("%d %d",j+1,k);
 }
