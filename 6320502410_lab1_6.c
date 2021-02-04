@@ -3,9 +3,8 @@ int main()
 {
     int n,m,t,i=0,k=0;
     scanf("%d%d%d",&n,&m,&t);
-    fflush(stdin);
-    char l;
-    scanf("%c",&l);
+    char l[1];
+    scanf("%c ",&l);
     if(l == 'L')
     {
         while(t > 0)
