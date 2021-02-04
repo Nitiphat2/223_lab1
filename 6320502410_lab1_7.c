@@ -37,6 +37,10 @@ int main()
                 printf("%d.%d pm",b,d);
             }
         }
+        else
+        {
+            printf("0.00 am");
+        }
     }
 
 }
