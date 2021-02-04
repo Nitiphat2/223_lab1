@@ -3,17 +3,20 @@ int main()
 {
     float time,a;
     scanf("%f",&time);
-    printf("%f",time);
     int b,c,d;
-    if(time < 24)
+    b = time;
+    c = time * 100;
+    d = c - (b*100);
+    if(b <= 24 && (d >= 0 && d < 60))
     {
-        if(0 < time && time < 12)
+        if(0 <= b && b <= 12)
         {
-            printf("%.2f am",time);
+            printf("%d.%d am",b,d);
         }
-        else if(12 < time && time < 24)
+        else if(12 < b && b <= 24)
         {
-            printf("%.2f pm",time);
+            b = b - 12;
+            printf("%d.%d pm",b,d);
         }
     }
 
