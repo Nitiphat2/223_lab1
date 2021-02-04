@@ -31,12 +31,12 @@ int main()
             if(i%2==0)
             {
                 t=t-n;
-                k=1;
+                k=0;
             }
             else
             {
                 t=t-m;
-                k = 0;
+                k = 1;
             }
         }
     }
