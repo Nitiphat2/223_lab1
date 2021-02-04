@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);
+    unsigned long long int n;
+    scanf("%llu",&n);
     int a,b;
     a = n%3;
     b = n%11;
