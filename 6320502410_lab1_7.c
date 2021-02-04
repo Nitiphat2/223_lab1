@@ -3,11 +3,16 @@ int main()
 {
     float time,a;
     scanf("%f",&time);
-    int b,c,d;
+    int b,c,d,i;
     b = time;
     c = time * 100;
     d = c - (b*100);
-    if(b <= 24 && (d >= 0 && d < 60))
+    for(i=0;d > 60;i++)
+    {
+        d = d - 60;
+    }
+    b = b+i;
+    if(b <= 24 )
     {
         if(0 <= b && b < 12)
         {
